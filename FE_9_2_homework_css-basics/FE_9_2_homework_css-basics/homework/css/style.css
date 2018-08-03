@@ -1,0 +1,149 @@
+@media print{
+
+    h2.tm-section-title{
+        color: #1812ff
+    }
+    .tm-sidebar, #about, .heading, .blocks, #ideas, #contact, .img-fluid{
+        display: none;
+    }
+    .tm-main-content{
+        width: 100%;
+        margin-left: 0px;
+    }
+    .tm-banner-inner{
+        padding: 0px;
+        height: 220px;
+    }
+    .flex-2-col{
+        display: block;
+    }
+    .flex-item:not(:first-child){
+        text-align: center;
+    }
+    .tm-team-description-container{
+        max-width: none;
+    }
+    .pad{
+        margin-top: -110px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        padding-left: 60px;
+    }
+    .tm-footer{
+        margin-top: 0px;
+    }
+}
+
+@media screen{
+
+    h2.tm-section-title-box:hover {
+        background-color: #31b0d5;
+        color: white;
+        font-weight: bold;
+    }
+
+    img.img-fluid.thumbnail {
+        border-radius: 100%;
+    }
+
+    p:first-letter {
+        color: #76cdd7;
+        font-size: 30px;
+    }
+
+    button.btn:hover {
+        background-color: #31b0d5;
+    }
+
+    button.submit-btn {
+        color: red;
+    }
+
+    input[type=text].form-control {
+        color: red;
+    }
+
+    div.mandatory-field::after {
+        content: "*";
+        float: right;
+        color: red;
+    }
+
+    li.tm-nav-item:not(:last-of-type) {
+        border-bottom: 2px dotted silver;
+    }
+
+    a.pad:visited {
+        color: silver;
+    }
+
+    .pad ol a:hover {
+        color: #9cdbe2;
+        text-decoration: underline double;
+    }
+
+    a.text::after {
+        content: "New";
+        color: red;
+        vertical-align: top;
+        position: relative;
+        font-size: .7em;
+    }
+
+    .tm-content-box ul p {
+        font-style: italic;
+        font-size: 23px;
+    }
+
+    .tm-content-box ul p:first-letter {
+        color: black;
+    }
+
+    .blocks li:nth-of-type(odd) {
+        background-color: #f2f2f2;
+    }
+
+    .tm-content-box ul h2 {
+        font-size: 45px;
+    }
+
+    h2 + p {
+        font-style: italic;
+    }
+
+    .carousel-item.active h2 {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+
+    .tm-sidebar, .tm-content-box {
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    }
+
+    p:not(.tm-banner-text) {
+        text-indent: 26px;
+        line-height: 32px;
+    }
+
+    .tm-content-box {
+        position: relative;
+    }
+
+    .tm-content-box::after {
+        width: 0;
+        height: 0;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: '';
+        position: absolute;
+        border-top: 24px solid #31b0d5;
+        border-right: 124px solid transparent;
+    }
+
+    .tm-content-box.flex-2-col:nth-child(2)::after {
+        display: none;
+    }
+}
+
