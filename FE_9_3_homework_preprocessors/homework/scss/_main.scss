@@ -1,0 +1,150 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: $font_family;
+  background-color: $backgroundColor;
+}
+.main-wrapper{
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block;
+}
+
+header{
+  position: relative;
+  .logo {
+    display: inline-block;
+    width: 400px;
+    img {
+      width: 100%;
+    }
+  }
+  nav {
+    position: absolute;
+    display: inline-block;
+    width: 560px;
+    padding: 20px;
+    margin-top: 165px;
+    border-bottom: 1px solid $lineColor;
+    border-top: 1px solid $lineColor;
+    text-align: center;
+    a {
+      color: $linkColor;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 50px;
+    }
+    a:hover{
+      color: $textColor;
+    }
+  }
+}
+.toolbar{
+  text-align: right;
+  input[type=text]{
+    background-color: $backgroundColor;
+
+    margin: 10px;
+    padding-left: 15px;
+    width: 200px;
+    height: 35px;
+    color: $searchColor;
+    font-weight: bold;
+    border: 1px solid $linkColor;
+  }
+}
+.post-list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 70px;
+  article{
+    width: 480px;
+    margin-top: 17px;
+    padding: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: $articleColor;
+    img{
+      width: 100%;
+    }
+    .post-description{
+      color: $post_descriptionColor;
+      text-indent: 10px;
+    }
+    h3{
+      margin-top: 7px;
+      padding-top: 5px;
+      border-top: 1px solid $textColor;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: $h3Color;
+    }
+    p{
+      line-height: 25px;
+      margin-top: -18px;
+      text-align: left;
+      color: $textColor;
+    }
+  }
+
+}
+.about{
+  h1{
+    font-weight: bold;
+    text-align: right;
+    text-transform: uppercase;
+    color: $linkColor;
+  }
+  p{
+    line-height: 25px;
+    color: $textColor;
+  }
+  img{
+    width: 100%;
+  }
+}
+.contact-form{
+  margin-top: 70px;
+  h1, h4{
+    font-weight: bold;
+    text-align: right;
+    color: $linkColor;
+  }
+  h4{
+    margin-top: -20px;
+    text-transform: uppercase;
+  }
+  .contact-form-input{
+
+  }
+  .form-control{
+    background-color: $backgroundColor;
+    border: 1px solid $lineColor;
+    margin-bottom: 18px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-indent: 20px;
+    font-family: $font_family;
+    font-size: 18px;
+  }
+  .submit-btn{
+    border: none;
+    background-color:$linkColor;
+    text-transform: uppercase;
+    color: $backgroundColor;
+    font-size:20px;
+    padding:15px 113px;
+    margin-left: 729px;
+  }
+  button.btn:hover {
+    background-color: $buttonColor;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+}
+footer{
+  color: $textColor;
+}
+

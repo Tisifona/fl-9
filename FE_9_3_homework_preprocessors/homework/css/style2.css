@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: serif;
+  background-color: #efefef; }
+
+.main-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: block; }
+
+header {
+  position: relative; }
+  header .logo {
+    display: inline-block;
+    width: 400px; }
+    header .logo img {
+      width: 100%; }
+  header nav {
+    position: absolute;
+    display: inline-block;
+    width: 560px;
+    padding: 20px;
+    margin-top: 165px;
+    border-bottom: 1px solid #cfd8dc;
+    border-top: 1px solid #cfd8dc;
+    text-align: center; }
+    header nav a {
+      color: #fc6145;
+      text-transform: uppercase;
+      text-decoration: none;
+      padding: 50px; }
+    header nav a:hover {
+      color: #757575; }
+
+.toolbar {
+  text-align: right; }
+  .toolbar input[type=text] {
+    background-color: #efefef;
+    margin: 10px;
+    padding-left: 15px;
+    width: 200px;
+    height: 35px;
+    color: #e72604;
+    font-weight: bold;
+    border: 1px solid #fc6145; }
+
+.post-list {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 70px; }
+  .post-list article {
+    width: 480px;
+    margin-top: 17px;
+    padding: 12px;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: #ffffff; }
+    .post-list article img {
+      width: 100%; }
+    .post-list article .post-description {
+      color: #bdbdc1;
+      text-indent: 10px; }
+    .post-list article h3 {
+      margin-top: 7px;
+      padding-top: 5px;
+      border-top: 1px solid #757575;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #617d8c; }
+    .post-list article p {
+      line-height: 25px;
+      margin-top: -18px;
+      text-align: left;
+      color: #757575; }
+
+.about h1 {
+  font-weight: bold;
+  text-align: right;
+  text-transform: uppercase;
+  color: #fc6145; }
+.about p {
+  line-height: 25px;
+  color: #757575; }
+.about img {
+  width: 100%; }
+
+.contact-form {
+  margin-top: 70px; }
+  .contact-form h1, .contact-form h4 {
+    font-weight: bold;
+    text-align: right;
+    color: #fc6145; }
+  .contact-form h4 {
+    margin-top: -20px;
+    text-transform: uppercase; }
+  .contact-form .form-control {
+    background-color: #efefef;
+    border: 1px solid #cfd8dc;
+    margin-bottom: 18px;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-indent: 20px;
+    font-family: serif;
+    font-size: 18px; }
+  .contact-form .submit-btn {
+    border: none;
+    background-color: #fc6145;
+    text-transform: uppercase;
+    color: #efefef;
+    font-size: 20px;
+    padding: 15px 113px;
+    margin-left: 729px; }
+  .contact-form button.btn:hover {
+    background-color: #8c3232;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); }
+
+footer {
+  color: #757575; }
+
+/*# sourceMappingURL=style2.css.map */
