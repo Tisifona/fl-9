@@ -1,0 +1,258 @@
+/*
+ * Feel free to change name of colors if you need it
+ * Feel free to add new colors if you need it
+ */
+/*:root {
+  --bg-color--dark: #0a1223;
+  --bg-color--light: #fff;
+  --link: #5d5d5d;
+  --link--active: #54597d;
+  --link--hover: #54597d;
+  --article-title: #ddd;
+  --article-title--dark: #000;
+  --thumbnail--description: #5d5d5d;
+*/
+/*These styles are needed only for media query max-width: 575px
+
+The 'Up' button (circle button at right bottom corner)
+--btn-color: #fff;
+--btn-bg-color: #5ebcff;
+
+--navigation-border-bottom: #ddd;
+--thumbnail-title: #484747;
+}*/
+
+/* Your styles go here */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+    margin: 0 auto;
+    max-width: 80%;
+}
+
+.navigation nav a:hover {
+    color: #54597d;
+}
+
+.navigation nav a:active {
+    color: #54597d;
+}
+
+.navigation li:first-child a {
+    color: #54597d;
+}
+
+.thumbnail-all {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.article-title {
+    margin-top: 150px;
+    text-align: center;
+    font-size: 50px;
+}
+
+.thumbnail-description {
+    text-align: justify;
+    color: #5d5d5d;
+    text-indent: 20px;
+}
+
+.thumbnail-title {
+    font-size: 35px;
+    color: #484747;
+}
+
+/*SMALL*/
+@media (max-width: 575px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .article-title {
+        color: #000000;
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .navigation ul {
+        display: block;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navigation nav a {
+        font-size: 17px;
+        text-decoration: none;
+        color: #5d5d5d;
+    }
+
+    .navigation-item {
+        list-style-type: none;
+        padding: 5px 0 5px 0;
+        border-bottom: 1px solid #dddddd;
+    }
+
+    .navigation-item-link {
+        font-weight: bold;
+    }
+
+    .thumbnail {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .thumbnail-text {
+        width: 100%;
+    }
+
+    .thumbnail-image {
+        width: 100%;
+    }
+
+    .up-button {
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        display: block;
+        width: 65px;
+        height: 65px;
+        line-height: 65px;
+        border-radius: 50%;
+        background-color: #5ebcff;
+        color: #ffffff;
+        box-shadow: 10px 10px 20px #8e8e8e;
+        font-weight: bold;
+        font-size: 20px;
+        text-align: center;
+        text-decoration: none;
+    }
+
+}
+
+/*MEDIUM*/
+@media (min-width: 576px) and (max-width: 991px) {
+    body {
+        background-color: #0a1223;
+    }
+
+    .article-title {
+        color: #dddddd;
+    }
+
+    .navigation nav {
+        position: absolute;
+    }
+
+    .navigation nav a {
+        font-size: 17px;
+        padding: 20px;
+        text-decoration: none;
+        color: #5d5d5d;
+    }
+
+    .navigation li {
+        display: block;
+        float: left;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .thumbnail {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .thumbnail-text {
+        width: 100%;
+    }
+
+    .thumbnail-image {
+        width: 100%;
+    }
+
+    h2.thumbnail-title {
+        background: linear-gradient(to right, #ededed, #383838);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+}
+
+/*LARGE*/
+@media (min-width: 992px) {
+    body {
+        background-color: #0a1223;
+    }
+
+    .article-title {
+        font-size: 70px;
+        color: #dddddd;
+    }
+
+    .navigation nav {
+        position: absolute;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .navigation nav a {
+        font-size: 17px;
+        padding: 20px;
+        text-decoration: none;
+        color: #5d5d5d;
+    }
+
+    .navigation li {
+        display: block;
+        float: left;
+    }
+
+    .thumbnail {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        align-content: center;
+    }
+
+    .thumbnail:nth-child(odd) {
+        flex-direction: row-reverse;
+    }
+
+    .thumbnail-text {
+        width: 48%;
+    }
+
+    .thumbnail-image {
+        width: 48%;
+    }
+
+    h2.thumbnail-title {
+        background: linear-gradient(to right, #ededed, #383838);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: table;
+    }
+
+}
