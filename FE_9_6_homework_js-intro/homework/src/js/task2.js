@@ -19,3 +19,4 @@ if(a_length > 0 && b_length > 0 && angle > 0){
     output = `Invalid data`;
 }
     console.log(output);
+
