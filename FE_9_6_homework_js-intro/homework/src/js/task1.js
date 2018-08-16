@@ -14,4 +14,5 @@ if (amount_of_money > 0 && discount >= 0 && discount <= 100) {
 } else {
     output = `Invalid data`;
 }
-    console.log(output);
+
+console.log(output);
