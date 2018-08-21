@@ -1,4 +1,3 @@
-// Your code goes here
 let numberFour = 4;
 let numberTwenty = 20;
 
