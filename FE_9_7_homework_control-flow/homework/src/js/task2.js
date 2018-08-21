@@ -1,4 +1,3 @@
-// Your code goes here
 let minNumber = 0;
 let maxNumber = 5;
 let maxPrize = 10;
