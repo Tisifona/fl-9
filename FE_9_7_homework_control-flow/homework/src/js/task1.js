@@ -1,6 +1,5 @@
-// Your code goes here
-let numberFour = 4;
-let numberTwenty = 20;
+const numberFour = 4;
+const numberTwenty = 20;
 
 const login = prompt(`Please enter your login`);
 

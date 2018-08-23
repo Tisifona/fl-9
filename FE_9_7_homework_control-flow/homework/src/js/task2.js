@@ -1,14 +1,13 @@
-// Your code goes here
 let minNumber = 0;
 let maxNumber = 5;
 let maxPrize = 10;
-let magicNumberOne = 1;
-let magicNumberTwo = 2;
-let magicNumberThree = 3;
-let magicNumberFour = 4;
+const magicNumberOne = 1;
+const magicNumberTwo = 2;
+const magicNumberThree = 3;
+const magicNumberFour = 4;
 
 function getRandom(min, max) {
-    let one = 1;
+    const one = 1;
     min = Math.ceil(min);
     max = Math.floor(max);
     return Math.floor(Math.random() * (max - min + one)) + min;
